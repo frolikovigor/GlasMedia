@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+
+	 1     - глубина поиска
+	 2     - раздел поиска (id/name)
+	 3     - тип страницы ($type-id)
+	 4     - название поля, по которому необходимо производить фильтрацию
+	 5     - содержание, по которому необходимо проводить фильтрацию
+	 6     - режим для фильтруемого свойства (not/like)
+	 7     - режим сортировки поля, указанного в 6-м параметре (ascending - по умолчанию/descending или 1/0)
+	 8     - поле для сортировки результатов выборки
+	 9     - для пагинации
+	 limit - ограничение по выводу страниц
+	 
+-->
+
+<selection>
+	
+    <target result="pages">
+        <category depth="{1}">{2}</category>
+        <type id="{3}" />
+    </target>
+    
+    <property name="{4}" value="{5}" mode="{6}"/>
+    
+    <sort order="{7}">{8}</sort>
+    
+    <limit page="{9}">{limit}</limit>
+    
+    <extended>
+	    <properties>{ext_props}</properties>
+	    <groups>{ext_groups}</groups>
+	</extended>
+    
+</selection>

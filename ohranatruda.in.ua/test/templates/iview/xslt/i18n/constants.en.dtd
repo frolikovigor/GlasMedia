@@ -1,0 +1,100 @@
+<!-- Basket -->
+<!ENTITY basket-empty "Your cart is empty.">
+<!ENTITY to-the-amount-of "to the amount of">
+<!ENTITY checkout "Checkout">
+<!-- /Basket -->
+
+<!-- Cart -->
+<!ENTITY empty-cart "Your shopping cart is empty.">
+<!ENTITY cart-item-delete "Delete">
+<!-- /Cart -->
+
+<!-- Catalog -->
+<!ENTITY empty-category "This category is empty">
+<!ENTITY price "Price">
+<!ENTITY put-product-in-cart-tetx "Add to Cart">
+<!-- /Catalog -->
+
+<!-- Comments -->
+<!ENTITY no-comments "No comments">
+<!ENTITY comments "Comments">
+<!ENTITY comment "Comment">
+<!ENTITY your-name "Your name">
+<!ENTITY your-e-mail "Your E-mail">
+<!ENTITY comment-added "Comment added">
+<!ENTITY comment-date "Date">
+<!ENTITY comment-author "Author">
+<!-- /Comments -->
+
+<!-- Dispatches -->
+<!ENTITY subscribe "Subscribe">
+<!-- /Dispatches -->
+
+<!-- Emarket -->
+<!ENTITY order-number "Order number">
+<!ENTITY order-status "Order status">
+<!ENTITY order-method "Payment method">
+<!ENTITY order-sum "Order summ">
+<!ENTITY number "N">
+<!ENTITY date-from "from">
+<!ENTITY date-from-1 "from">
+<!ENTITY delivery "Delivery">
+<!ENTITY discount "Discount">
+<!-- /Emarket -->
+
+<!-- Search -->
+<!ENTITY search-default-text "Search">
+<!ENTITY search-founded-left "By your request">
+<!ENTITY search-founded-nothing "nothing found">
+<!-- /Search -->
+
+<!-- Users -->
+<!ENTITY login "Login">
+<!ENTITY password "Password">
+<!ENTITY log-in "Log in">
+<!ENTITY registration "Registration">
+<!ENTITY password-confirm "Repeat the password">
+<!ENTITY registration-do "Register now">
+<!ENTITY registration-done "Registration successful.">
+<!ENTITY registration-error "Error occured.">
+<!ENTITY registration-error-user-exists "User already exists.">
+<!ENTITY registration-activation-note "Please check your inbox and follow the link to activate your account.">
+<!ENTITY account-activated "Activation successful.">
+<!ENTITY forget-password "Forget password?">
+<!ENTITY forget-button "Resend password">
+<!ENTITY forget-message "Your password was sent to your e-mail.">
+<!ENTITY activation-error "Incorrect activation code">
+<!ENTITY private-office "Private office">
+<!ENTITY log-out "Log out">
+<!ENTITY user-not-permitted "You are not permitted to view this content">
+<!ENTITY user-reauth "Incorrect login or password, please check and repeat.">
+<!ENTITY welcome "Welcome!">
+<!ENTITY save-changes "Save changes">
+<!-- /Users -->
+
+<!-- Vote -->
+<!ENTITY vote "Vote">
+<!ENTITY reply "Reply">
+<!ENTITY total-votes "Total votes">
+<!ENTITY poll-no-results "Poll no results">
+<!-- /Vote -->
+
+<!-- Currencies -->
+<!ENTITY rub "rub.">
+<!-- /Currencies -->
+
+<!-- Errors -->
+<!ENTITY errors "Errors">
+<!-- /Errors -->
+
+<!-- Captcha -->
+<!ENTITY enter-captcha "Enter the code">
+<!ENTITY reset-captcha "Reload the code">
+<!-- /Captcha -->
+
+<!-- Others -->
+<!ENTITY site-map "Site map">
+<!ENTITY yes "Yes">
+<!ENTITY no "No">
+<!ENTITY e-mail "E-mail">
+<!-- /Others -->

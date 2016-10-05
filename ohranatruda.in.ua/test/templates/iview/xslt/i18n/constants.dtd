@@ -1,0 +1,100 @@
+<!-- Basket -->
+<!ENTITY basket-empty "В вашей корзине нет товаров.">
+<!ENTITY to-the-amount-of "на сумму">
+<!ENTITY checkout "Оформить заказ">
+<!-- /Basket -->
+
+<!-- Cart -->
+<!ENTITY empty-cart "В вашей корзине нет товаров.">
+<!ENTITY cart-item-delete "Удалить">
+<!-- /Cart -->
+
+<!-- Catalog -->
+<!ENTITY empty-category "Товары отсутствуют">
+<!ENTITY price "Цена">
+<!ENTITY put-product-in-cart-tetx "В корзину">
+<!-- /Catalog -->
+
+<!-- Comments -->
+<!ENTITY no-comments "Нет комментариев.">
+<!ENTITY comments "Комментарии">
+<!ENTITY comment "Комментарий">
+<!ENTITY your-name "Ваше имя">
+<!ENTITY your-e-mail "Ваш E-mail">
+<!ENTITY comment-added "Отзыв добавлен">
+<!ENTITY comment-date "Дата">
+<!ENTITY comment-author "Автор">
+<!-- /Comments -->
+
+<!-- Dispatches -->
+<!ENTITY subscribe "Подписаться">
+<!-- /Dispatches -->
+
+<!-- Emarket -->
+<!ENTITY order-number "№ Заказа">
+<!ENTITY order-status "Статус">
+<!ENTITY order-method "Способ оплаты">
+<!ENTITY order-sum "Сумма">
+<!ENTITY number "№">
+<!ENTITY date-from "от">
+<!ENTITY date-from-1 "с">
+<!ENTITY delivery "Доставка">
+<!ENTITY discount "Скидка">
+<!-- /Emarket -->
+
+<!-- Search -->
+<!ENTITY search-default-text "Поиск">
+<!ENTITY search-founded-left "По вашему запросу">
+<!ENTITY search-founded-nothing "ничего не найдено">
+<!-- /Search -->
+
+<!-- Users -->
+<!ENTITY login "Логин">
+<!ENTITY password "Пароль">
+<!ENTITY log-in "Вход">
+<!ENTITY registration "Регистрация">
+<!ENTITY password-confirm "Подтвердите пароль">
+<!ENTITY registration-do "Зарегистрироваться">
+<!ENTITY registration-done "Регистрация прошла успешно.">
+<!ENTITY registration-error "Произошла ошибка.">
+<!ENTITY registration-error-user-exists "Такой пользователь уже существует.">
+<!ENTITY registration-activation-note "Через несколько минут на ваш почтовый ящик придет письмо со ссылкой на активацию аккаунта.">
+<!ENTITY account-activated "Аккаунт успешно активирован.">
+<!ENTITY forget-password "Забыли пароль?">
+<!ENTITY forget-button "Восстановить">
+<!ENTITY forget-message "На e-mail адрес, указанный Вами при регистрации, был выслан пароль.">
+<!ENTITY activation-error "Невозможно восстановить пароль: неверный код активации.">
+<!ENTITY private-office "Личный кабинет">
+<!ENTITY log-out "Выход">
+<!ENTITY user-not-permitted "Ваших прав недостаточно для просмотра данной страницы">
+<!ENTITY user-reauth "Вы ввели неверный логин или пароль. Проверьте раскладку клавиатуры, не нажата ли клавиша «Caps Lock» и попробуйте ввести логин и пароль ещё раз:">
+<!ENTITY welcome "Добро пожаловать!">
+<!ENTITY save-changes "Сохранить изменения">
+<!-- /Users -->
+
+<!-- Vote -->
+<!ENTITY vote "Опрос">
+<!ENTITY reply "Ответить">
+<!ENTITY total-votes "Всего голосов">
+<!ENTITY poll-no-results "Результаты голосования отсутствуют">
+<!-- /Vote -->
+
+<!-- Currencies -->
+<!ENTITY rub "руб.">
+<!-- /Currencies -->
+
+<!-- Errors -->
+<!ENTITY errors "Ошибки">
+<!-- /Errors -->
+
+<!-- Captcha -->
+<!ENTITY enter-captcha "Введите код с картинки">
+<!ENTITY reset-captcha "перезагрузить код">
+<!-- /Captcha -->
+
+<!-- Others -->
+<!ENTITY site-map "Карта сайта">
+<!ENTITY yes "Да">
+<!ENTITY no "Нет">
+<!ENTITY e-mail "E-mail">
+<!-- /Others -->

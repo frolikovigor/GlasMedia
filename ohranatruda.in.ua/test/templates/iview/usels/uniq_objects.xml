@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	1 - тип страницы ($type-id)
+-->
+
+<selection>
+	
+    <target result="objects">
+        <type id="{1}" />
+    </target>
+    <property name="{2}" value="{3}" mode="{4}"/>
+    <extended>
+        <properties>{ext_props}</properties>
+        <groups>{ext_groups}</groups>
+    </extended>
+    <sort order="{5}">{sort}</sort>
+    
+</selection>
