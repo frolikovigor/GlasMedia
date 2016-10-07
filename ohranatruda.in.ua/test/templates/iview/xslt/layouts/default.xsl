@@ -670,9 +670,12 @@
                 <xsl:if test="($document-page-id = '3245') or (/result/udata[@module='vote'][@method='get']/user = $user-id)">
                     <script type="text/javascript" src="/templates/iview/js/ckeditor/ckeditor.js" />
                 </xsl:if>
-                <script async="async" type="text/javascript" src="/min/b=templates/iview/js&amp;f=jquery.min.js,google_jsapi.js,jquery.cookie.js,bootstrap.min.js,masonry.pkgd.min.js,cropper.min.js,cc_validate.js,jquery.colorbox-min.js,social-likes.min.js,jquery.form.js,jquery.gridster.min.js,introJs/intro.js,scripts.js?{/result/@system-build}"></script>
+
+                <!--<script async="async" type="text/javascript" src="/min/b=templates/iview/js&amp;f=jquery.min.js,google_jsapi.js,jquery.cookie.js,bootstrap.min.js,masonry.pkgd.min.js,cropper.min.js,cc_validate.js,jquery.colorbox-min.js,social-likes.min.js,jquery.form.js,jquery.gridster.min.js,introJs/intro.js,mousewhell.js,wait_for_images.js,ddd.js,touch_smartphoenes.js,scripts.js?{/result/@system-build}"></script>-->
+                <script type="text/javascript" src="/templates/iview/js/scripts.js" />
 
                 <!--<script type="text/javascript">socializ(encodeURIComponent('<xsl:value-of select="concat('http://',$domain,$document-link)" />'),encodeURIComponent('<xsl:value-of select="//property[@name='h1']/value" />'))</script>-->
+
 
             </body>
 

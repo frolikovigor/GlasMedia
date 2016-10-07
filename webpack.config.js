@@ -1,5 +1,7 @@
 const NODE_ENV = process.env.NODE_ENV || 'development';
 
+const webpack = require('webpack');
+
 module.exports = {
     entry: './ohranatruda.in.ua/test/templates/iview/js/scripts_es6.js',
 
@@ -22,6 +24,14 @@ module.exports = {
             from: './dev/css/style.css', to: './dist/css/style.css'
         }])
     ],*/
+    
+    /*plugins: [
+        new webpack.optimize.UglifyJsPlugin({minimize: true})
+    ],*/
+
+    /*resolve: {
+        root: ['./ohranatruda.in.ua/test/templates/iview/js/project_js']
+    },*/
 
     module: {
         loaders: [

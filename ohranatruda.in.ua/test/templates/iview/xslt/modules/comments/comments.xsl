@@ -24,6 +24,64 @@
         <xsl:param name="cut-height">56</xsl:param>
 
         <xsl:variable name="comments" select="document(concat('udata://content/getListComments/',$objId,'/',$per_page,'/',$current_p))" />
+<!--
+
+        <div class="comments">
+            <div class="title"><div>Комментарии (<span>2</span>)</div></div>
+
+            <div class="comment" data-page="18439" data-parent="" data-per_page="2">
+                <img class="avatar" src="/images/cms/thumbs/146faa540e2a8f742fbd30325b9ed86c053c8d74/avatar_200_50_50_5_90.jpg" width="50" height="50" alt="" />
+                <textarea class="form-control" placeholder="Введите текст комментария..." maxlength="10000"></textarea>
+                <button type="button" class="btn btn-default btn-sm" onclick="sendComment($(this));">Комментировать</button>
+                <label class="checkbox-inline anonymous"><input type="checkbox" name="anonymous" value="1" /> Анонимно</label>
+                <img class="preloader hide" src="/templates/iview/images/preloader.gif" />
+            </div>
+
+            <div class="comment float" data-page="18439" data-parent="">
+                <img class="avatar" src="/images/cms/thumbs/146faa540e2a8f742fbd30325b9ed86c053c8d74/avatar_200_50_50_5_90.jpg" width="50" height="50" alt="" />
+                <textarea class="form-control" placeholder="Введите текст комментария..." maxlength="10000"></textarea>
+                <button type="button" class="btn btn-default btn-sm" onclick="sendComment($(this));">Комментировать</button>
+                <label class="checkbox-inline anonymous"><input type="checkbox" name="anonymous" value="1" /> Анонимно</label>
+                <img class="preloader hide" src="/templates/iview/images/preloader.gif" />
+            </div>
+
+            <div class="comments_list">
+                <div class="comment_item" itemprop="comment" itemscope="itemscope" itemtype="http://schema.org/UserComments">
+                    <img class="avatar" src="/images/cms/thumbs/1f1204c38f5d7f50f0ab6bcf597ef97666ee60e8/avatar_200_50_50_5_80.jpg" width="50" height="50" alt="" />
+                    <span class="name" itemprop="creator">Денис</span>
+                    <span class="date">3 месяца назад</span>
+                    <div class="comment_content" itemprop="commentText">
+                        <div class="content_cut" data-cut-id="comment_1455" data-cut-height="55">Как по мне, так лучше собственный дом, который хорошо надо обустроить и не будет шумных соседей и всё будет тогда хорошо.</div>
+                        <a href="#" class="open_cut hide" data-for-cut="comment_1455">Читать дальше</a>
+                        <span class="comment_this" data-parent="1455" data-page="18439" data-per_page="2">
+                            <span class="glyphicon glyphicon-pencil"></span>Ответить</span>
+                        <span class="cancel_comment_this hide">
+                            <span class="glyphicon glyphicon-share-alt"></span>Отменить ответ</span>
+                        <div class="answer"></div>
+                    </div>
+                    <img class="comment_remove" src="/images/cms/admin/mac/tree/ico_del.png" onclick="comment_remove(1455);" />
+                </div>
+
+                <div class="comment_item" itemprop="comment" itemscope="itemscope" itemtype="http://schema.org/UserComments">
+                    <img class="avatar" src="/images/cms/thumbs/1f1204c38f5d7f50f0ab6bcf597ef97666ee60e8/avatar_200_50_50_5_80.jpg" width="50" height="50" alt="" />
+                    <span class="name" itemprop="creator">Денис</span>
+                    <span class="date">3 месяца назад</span>
+                    <div class="comment_content" itemprop="commentText">
+                        <div class="content_cut" data-cut-id="comment_1455" data-cut-height="55">Как по мне, так лучше собственный дом, который хорошо надо обустроить и не будет шумных соседей и всё будет тогда хорошо.</div>
+                        <a href="#" class="open_cut hide" data-for-cut="comment_1455">Читать дальше</a>
+                        <span class="comment_this" data-parent="1455" data-page="18439" data-per_page="2">
+                            <span class="glyphicon glyphicon-pencil"></span>Ответить</span>
+                        <span class="cancel_comment_this hide">
+                            <span class="glyphicon glyphicon-share-alt"></span>Отменить ответ</span>
+                        <div class="answer"></div>
+                    </div>
+                    <img class="comment_remove" src="/images/cms/admin/mac/tree/ico_del.png" onclick="comment_remove(1455);" />
+                </div>
+            </div>
+        </div>
+
+-->
+
 
         <div class="comments">
             <div class="title">
@@ -95,7 +153,7 @@
                 <xsl:with-param name="cut-height" select="$cut-height" />
             </xsl:apply-templates>
             <xsl:if test="$comments//total &gt; $comments//per_page">
-                <a class="more" href="#" onclick="getListComments($(this),'{$comments//obj_id}','{$comments//per_page}');return false;"><span>Показать еще</span><img class="preloader hide" src="/templates/iview/images/preloader.gif" /></a>
+                <a class="more" href="#" onclick="glasmedia.getListComments($(this),'{$comments//obj_id}','{$comments//per_page}');return false;"><span>Показать еще</span><img class="preloader hide" src="/templates/iview/images/preloader.gif" /></a>
             </xsl:if>
         </div>
     </xsl:template>
