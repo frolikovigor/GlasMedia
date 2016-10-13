@@ -53,7 +53,7 @@
 
                     <xsl:if test="count(//images//item) &lt; 1">
                         <div class="form-group attach_photo">
-                            <button class="btn btn-default btn upload_image" type="button" data-fragment="0" data-url="/vote/upload_image_poll/" data-parameters="" onclick="glasmedia.UploadImage('poll_new_image', $(this));">
+                            <button class="btn btn-default btn upload_image" type="button" data-fragment="0" data-url="/vote/upload_image_poll/" data-parameters="" onclick="GM.View.Images.UploadImage('poll_new_image', $(this));">
                                 <span class="glyphicon glyphicon-paperclip"></span>
                                 Прикрепить фото
                             </button>
@@ -243,7 +243,7 @@
 
                             <xsl:if test="count(//images//item) &lt; 4">
                                 <div class="form-group attach_photo">
-                                    <button class="btn btn-default btn upload_image" type="button" data-fragment="" data-url="/vote/upload_image_poll/" data-parameters="" onclick="glasmedia.UploadImage('poll_new_image', $(this));">
+                                    <button class="btn btn-default btn upload_image" type="button" data-fragment="" data-url="/vote/upload_image_poll/" data-parameters="" onclick="GM.View.Images.UploadImage('poll_new_image', $(this));">
                                         <span class="glyphicon glyphicon-paperclip"></span>
                                         Прикрепить фото
                                     </button>

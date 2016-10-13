@@ -1,3 +1,7 @@
+.asdf{
+  color:#aaa;
+}
+
 @charset "UTF-8";
 * {
   margin: 0;
@@ -73,15 +77,16 @@ h1,
 .shell {
   margin: 0 auto;
   width: 1450px; }
-  .shell.ib {
-    margin-left: 320px;
-    width: 940px; }
+
+.shell.ib {
+  margin-left: 320px;
+  width: 940px; }
 
 .modal.modal-wide .modal-dialog {
   max-width: 940px;
   width: 90%; }
 
-header {
+#header {
   background-color: #265a88;
   font-size: 0;
   left: 0;
@@ -89,15 +94,15 @@ header {
   top: 0;
   width: 100%;
   z-index: 3; }
-  header #authorization_btn {
+  #header #authorization_btn {
     border: 1px solid #265a88;
     position: absolute;
     right: 10px;
     top: 6px; }
-  header li {
+  #header li {
     display: inline-block; }
 
-.logo {
+#logo {
   background: url("/images/logo.png") no-repeat;
   background-position: 0 6px;
   background-size: 16px;
@@ -107,16 +112,18 @@ header {
   padding-left: 30px;
   position: absolute;
   top: 8px; }
-  .logo a {
-    display: block;
-    text-decoration: none !important;
-    color: #fff !important;
-    text-shadow: rgba(255, 255, 255, 0.3) 2px 2px 1px;
-    letter-spacing: -2px;
-    width: 100px;
-    margin-top: 2px; }
-  .logo span {
-    color: #ddd; }
+
+#logo a {
+  display: block;
+  text-decoration: none !important;
+  color: #fff !important;
+  text-shadow: rgba(255, 255, 255, 0.3) 2px 2px 1px;
+  letter-spacing: -2px;
+  width: 100px;
+  margin-top: 2px; }
+
+#logo span {
+  color: #ddd; }
 
 #authorization .preloader {
   display: inline-block;
@@ -139,33 +146,20 @@ header {
   #navigation .content {
     padding-right: 650px;
     position: relative; }
-    #navigation .content #all_catagories {
-      padding: 25px 0 15px 0; }
-      #navigation .content #all_catagories .close {
-        cursor: pointer; }
-      #navigation .content #all_catagories .grid-item {
-        padding: 15px 30px 15px 30px;
-        display: none;
-        width: 175px; }
-      #navigation .content #all_catagories .grid-item h2 {
-        margin-top: 0; }
-      #navigation .content #all_catagories .grid-item ul {
-        list-style: none; }
-      #navigation .content #all_catagories .grid-item ul li {
-        display: block;
-        font-size: 10pt; }
-      #navigation .content #all_catagories h2 {
-        font-size: 14pt;
-        text-decoration: underline; }
-      #navigation .content #all_catagories h3 {
-        font-size: 11pt;
-        margin: 5px 0; }
   #navigation .content > ul {
-    height: 42px;
     list-style: none;
     list-style-position: outside;
+    overflow: hidden;
     margin: 0 !important;
-    overflow: hidden; }
+    height: 42px; }
+    #navigation .content > ul li:not(.search) {
+      overflow: hidden;
+      margin: 0 !important;
+      height: 42px;
+      -webkit-transition: border 0.2s;
+      transition: border 0.2s; }
+    #navigation .content > ul li:not(.search):hover {
+      border-bottom: 4px solid #fff; }
     #navigation .content > ul li a {
       color: #fff;
       display: block;
@@ -189,14 +183,27 @@ header {
       text-decoration: none; }
     #navigation .content > ul li a:hover {
       text-decoration: none; }
-    #navigation .content > ul li:not(.search) {
-      height: 42px;
-      margin: 0 !important;
-      overflow: hidden;
-      -webkit-transition: border .2s;
-      transition: border .2s; }
-    #navigation .content > ul li:not(.search):hover {
-      border-bottom: 4px solid #fff; }
+  #navigation .content #all_catagories {
+    padding: 25px 0 15px 0; }
+  #navigation .content #all_catagories .close {
+    cursor: pointer; }
+  #navigation .content #all_catagories .grid-item {
+    padding: 15px 30px 15px 30px;
+    display: none;
+    width: 175px; }
+  #navigation .content #all_catagories .grid-item h2 {
+    margin-top: 0; }
+  #navigation .content #all_catagories .grid-item ul {
+    list-style: none; }
+  #navigation .content #all_catagories .grid-item ul li {
+    display: block;
+    font-size: 10pt; }
+  #navigation .content #all_catagories h2 {
+    font-size: 14pt;
+    text-decoration: underline; }
+  #navigation .content #all_catagories h3 {
+    font-size: 11pt;
+    margin: 5px 0; }
   #navigation #search-results-form input, #navigation #search-results-form button {
     border: 1px solid #265a88; }
   #navigation #search-results-form input[type='text'] {
@@ -209,8 +216,9 @@ header {
     left: -20px;
     cursor: pointer;
     display: none; }
-  #navigation.margin {
-    margin-right: 100px; }
+
+#navigation.margin {
+  margin-right: 100px; }
 
 #all_catagories {
   position: absolute;
@@ -225,7 +233,7 @@ header {
   right: -1px; }
 
 .bg {
-  /*background: url('/templates/iview/images/bg.jpg');*/
+  /*background: url(/templates/iview/images/bg.jpg);*/
   background-color: #265a88;
   border-color: #2b669a; }
 
@@ -834,6 +842,7 @@ img.img_20 {
     margin: -11px 0 4px;
     width: 32px;
 }*/
+/* leftPanel =========================================================================================================*/
 #left_panel {
   position: fixed;
   width: 220px;
@@ -879,6 +888,9 @@ img.img_20 {
     background: transparent;
     display: none; }
 
+/* leftPanel =========================================================================================================*/
+/* leftPanel =========================================================================================================*/
+/* panel_info ========================================================================================================*/
 #panel_info {
   position: absolute;
   left: 230px;
@@ -895,6 +907,10 @@ img.img_20 {
   display: inline-block;
   margin-right: 20px; }
 
+/* panel_info ========================================================================================================*/
+/* panel_info ========================================================================================================*/
+/* homepage ==========================================================================================================*/
+/* homepage ==========================================================================================================*/
 #homepage {
   position: relative; }
 
@@ -956,6 +972,9 @@ img.img_20 {
   height: 160px;
   display: inline-block; }
 
+/* homepage ==========================================================================================================*/
+/* viewPoll ==========================================================================================================*/
+/* viewPoll ==========================================================================================================*/
 #view_poll {
   width: 100%;
   position: relative;
@@ -1212,6 +1231,8 @@ img.img_20 {
 #view_poll .popular_categories {
   font-size: 12pt; }
 
+/* viewPoll ==========================================================================================================*/
+/* news ==============================================================================================================*/
 #news_view_from_bd .modal-footer {
   text-align: left; }
 
@@ -1263,6 +1284,9 @@ img.img_20 {
 .news.short a {
   font-size: 12px; }
 
+/* news ==============================================================================================================*/
+/* viewArticle =======================================================================================================*/
+/* viewArticle =======================================================================================================*/
 #view_article {
   width: 100%;
   position: relative;
@@ -1365,6 +1389,9 @@ img.img_20 {
   width: 100%;
   height: 331px; }
 
+/* viewArticle =======================================================================================================*/
+/* feed ==============================================================================================================*/
+/* feed ==============================================================================================================*/
 .feed {
   width: 100%;
   position: relative;
@@ -1673,11 +1700,14 @@ img.img_20 {
   #feeds_setting_form button[type=submit] {
     margin-top: 10px; }
 
+/* feed ==============================================================================================================*/
+/* viewCategory ======================================================================================================*/
+/* viewCategory ======================================================================================================*/
 #view_category {
-  font-size: 0;
-  padding-top: 10px;
+  width: 100%;
   position: relative;
-  width: 100%; }
+  font-size: 0;
+  padding-top: 10px; }
 
 #view_category .shell {
   position: relative; }
@@ -1693,6 +1723,9 @@ img.img_20 {
 #view_category .category_empty button {
   margin-right: 78px; }
 
+/* viewCategory ======================================================================================================*/
+/* polls and articles styles =========================================================================================*/
+/* polls and articles styles =========================================================================================*/
 .poll {
   position: relative;
   display: inline-block;
@@ -1847,7 +1880,7 @@ img.img_20 {
   position: absolute;
   top: 5px;
   right: 5px;
-  background: url("/templates/iview/images/toggleoff.png");
+  background: url(/templates/iview/images/toggleoff.png);
   width: 75px;
   height: 31px;
   z-index: 2;
@@ -2072,7 +2105,7 @@ img.img_20 {
 .poll .play_ico, #new_poll .play_ico {
   width: 75px !important;
   height: 75px !important;
-  background: url("/templates/iview/images/youtube_ico.png");
+  background: url(/templates/iview/images/youtube_ico.png);
   position: absolute;
   background-repeat: no-repeat;
   filter: alpha(opacity=80);
@@ -2130,6 +2163,8 @@ img.img_20 {
   width: 100%;
   height: auto; }
 
+/* polls and articles styles ======================================================================================================*/
+/* 404 notfound ======================================================================================================*/
 #notfound {
   width: 100%;
   position: relative;
@@ -2144,6 +2179,8 @@ img.img_20 {
   padding: 20px;
   margin-bottom: 10px; }
 
+/* 404 notfound ======================================================================================================*/
+/* 404 noscript ======================================================================================================*/
 #noscript {
   width: 100%;
   position: relative;
@@ -2158,6 +2195,9 @@ img.img_20 {
   padding: 20px;
   margin-bottom: 10px; }
 
+/* 404 notfound ======================================================================================================*/
+/* comments styles ===================================================================================================*/
+/* comments styles ===================================================================================================*/
 .comments {
   font-size: 13px; }
 
@@ -2284,6 +2324,9 @@ img.img_20 {
   cursor: pointer;
   width: 10px; }
 
+/* comments styles ===================================================================================================*/
+/* cabinet ===========================================================================================================*/
+/* cabinet ===========================================================================================================*/
 #cabinet {
   width: 100%;
   position: relative;
@@ -2471,6 +2514,9 @@ img.img_20 {
   display: inline-block;
   margin: 0 10px 5px 0; }
 
+/* cabinet ===========================================================================================================*/
+/* captcha ===========================================================================================================*/
+/* captcha ===========================================================================================================*/
 #captcha_enter #captcha_reset {
   font-size: 16pt;
   color: #265a88;
@@ -2498,6 +2544,9 @@ img.img_20 {
 #captcha_enter .preloader.captcha {
   margin-left: 10px; }
 
+/* captcha ===========================================================================================================*/
+/* new_poll_form =====================================================================================================*/
+/* new_poll_form =====================================================================================================*/
 .gridster {
   position: relative; }
 
@@ -2788,6 +2837,9 @@ img.img_20 {
   margin: 0;
   white-space: nowrap; }
 
+/* new_poll_form =====================================================================================================*/
+/* new_article_form ==================================================================================================*/
+/* new_article_form ==================================================================================================*/
 #new_article {
   width: 100%;
   position: relative;
@@ -2881,9 +2933,12 @@ img.img_20 {
   color: #ff0000;
   font-size: 16px; }
 
+/* new_article_form ==================================================================================================*/
+/* all_feed_list =====================================================================================================*/
 #all_feed_list {
   padding-top: 10px; }
 
+/* agreement =========================================================================================================*/
 #agreement {
   padding-top: 10px; }
 
@@ -2900,6 +2955,8 @@ img.img_20 {
 #agreement .theme h1 {
   margin-top: 0 !important; }
 
+/* agreement =========================================================================================================*/
+/* search-results ====================================================================================================*/
 #search-results {
   width: 100%;
   position: relative;
@@ -2923,6 +2980,8 @@ img.img_20 {
 #search-results .nav > li > a {
   padding: 2px 15px; }
 
+/* search-results ====================================================================================================*/
+/* footer ============================================================================================================*/
 #footer {
   background-color: #333;
   position: relative;
@@ -2942,6 +3001,7 @@ img.img_20 {
 #footer a {
   color: #ccc !important; }
 
+/* footer ============================================================================================================*/
 /*@media only screen and ( max-width: 1710px ) {*/
 @media only screen and (max-width: 2000px) {
   .shell {
@@ -2952,6 +3012,7 @@ img.img_20 {
     margin-left: auto !important; }
   .set_info.alert {
     margin: 10px 10px 0 0; }
+  /* panel_info ====================================================================================================*/
   #panel_info {
     position: relative;
     left: auto;
@@ -3008,16 +3069,22 @@ img.img_20 {
 @media only screen and (max-width: 890px) {
   .shift_right {
     padding-left: 0; }
+  /* leftPanel =========================================================================================================*/
   #left_panel:not(.opened) {
     left: -220px; }
   #left_panel .swipe-area {
     display: block; }
+  /* panel_info ====================================================================================================*/
   #panel_info {
     padding-left: 0; }
+  /* homePage ======================================================================================================*/
   #homepage {
     padding-top: 10px; }
+  /* homePage ======================================================================================================*/
+  /* viewCategory ==================================================================================================*/
   #view_category {
     padding-top: 10px; }
+  /* viewCategory ==================================================================================================*/
   #navigation .content #all_catagories .grid-item {
     padding: 5px 30px 5px 30px; }
   #navigation .content #all_catagories .grid-item ul {
@@ -3060,13 +3127,7 @@ img.img_20 {
     width: 250px !important; } }
 
 @media only screen and (max-width: 560px) {
-  .shell,
-  .poll.medium,
-  #view_poll .content,
-  #panel_info .content,
-  .category_preview,
-  .article.medium,
-  #view_article .content {
+  .shell, .poll.medium, #view_poll .content, #panel_info .content, .category_preview, .article.medium, #view_article .content {
     width: 336px !important; }
   .poll.standart div.image {
     width: 293px; }
@@ -3089,7 +3150,7 @@ img.img_20 {
     float: none; }
   .comments .comment_item .comment_item {
     margin-left: -65px; }
-  .logo {
+  #logo {
     display: none; }
   #navigation {
     margin-left: 30px; }

@@ -222,7 +222,7 @@
                                 data-tooltips-content="{$tooltips//item[@id='2']/@content}"
                                 data-tooltips-pos="{$tooltips//item[@id='2']/@pos}"
                             >
-                                <li><a href="#" onclick="poll_create_from_template({$getPoll//id})">Создать похожий опрос</a></li>
+                                <li><a href="#" onclick="GM.Events.NewPoll.PollCreateFromTemplate({$getPoll//id})">Создать похожий опрос</a></li>
                             </ul>
                         </div>
 
@@ -409,7 +409,7 @@
         <xsl:param name="repeat_vote"  />
         <xsl:param name="type" />
         <xsl:param name="schema_org">true</xsl:param>
-        <div class="item" onclick="pollSelectVariant($(this));">
+        <div class="item" onclick="GM.View.Poll.PollSelectVariant($(this));">
             <xsl:if test="$schema_org = 'true'">
                 <xsl:attribute name="itemprop">itemListElement</xsl:attribute>
                 <xsl:attribute name="itemscope">itemscope</xsl:attribute>
@@ -491,7 +491,7 @@
                                     <xsl:attribute name="href">http://www.youtube.com/embed/<xsl:value-of select="@video_id" />?rel=0&amp;wmode=transparent&amp;autoplay=1</xsl:attribute>
                                 </xsl:when>
                             </xsl:choose>
-                            <span class="play_ico hide"></span>
+                            <span class="play_ico"></span>
                         </xsl:if>
                         <xsl:apply-templates select="document(concat('udata://system/makeThumbnail/(.', @src, ')/',floor(@colspan * ($width div 4)),'/',floor(@rowspan * ($width div 5.8)),'/void/0/3/80/'))/udata" mode="image">
                             <xsl:with-param name="alt" select="$alt" />
@@ -507,7 +507,7 @@
                     </a>
                     <xsl:if test="@video_type">
                         <a href="{$link}?preview={@id}">
-                            <span class="play_ico hide"></span>
+                            <span class="play_ico"></span>
                         </a>
                     </xsl:if>
                 </xsl:otherwise>
@@ -679,8 +679,7 @@
                         <span class="right_text">Карта переключается кнопками <span class="glyphicon glyphicon-map-marker"></span></span>
                     </div>
                     <div class="googleMap">
-                        <div id="googleMapPoll{$id}"
-                             data-mapType="poll" data-pollId="{$id}">
+                        <div id="googleMapPoll{$id}" data-pollId="{$id}">
                         </div>
                         <span class="googleMapZoomOut hide glyphicon glyphicon-zoom-out" data-for_map="googleMapPoll{$id}"></span>
                     </div>

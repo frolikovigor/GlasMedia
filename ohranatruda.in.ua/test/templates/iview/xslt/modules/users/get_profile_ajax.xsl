@@ -31,7 +31,7 @@
                                 <span class="glyphicon glyphicon-remove remove" aria-hidden="true"></span>
                             </xsl:if>
                         </div>
-                        <button class="btn btn-default" type="button" data-fragment="1" data-url="/users/upload_image_profile/" data-parameters="" onclick="UploadImage('upload_image_profile', $(this));"><xsl:choose>
+                        <button class="btn btn-default" type="button" data-fragment="1" data-url="/users/upload_image_profile/" data-parameters="" onclick="GM.View.Images.UploadImage('upload_image_profile', $(this));"><xsl:choose>
                             <xsl:when test="//photo != ''">Изменить</xsl:when>
                             <xsl:otherwise>Добавить </xsl:otherwise>
                         </xsl:choose> фото</button>

@@ -99,7 +99,7 @@
                     <input type="text" name="name" class="form-control input-sm" placeholder="Ваше имя" maxlength="20" />
                 </xsl:if>
                 <textarea class="form-control" placeholder="Введите текст комментария..." maxlength="10000"></textarea>
-                <button type="button" class="btn btn-default btn-sm" onclick="sendComment($(this));">
+                <button type="button" class="btn btn-default btn-sm" onclick="GM.View.Comments.SendComment($(this));">
                     <xsl:if test="$comments//current_user/@captcha">
                         <xsl:attribute name="data-captcha">1</xsl:attribute>
                     </xsl:if>
@@ -123,7 +123,7 @@
                     <input type="text" name="name" class="form-control input-sm" placeholder="Ваше имя" maxlength="20" />
                 </xsl:if>
                 <textarea class="form-control" placeholder="Введите текст комментария..." maxlength="10000"></textarea>
-                <button type="button" class="btn btn-default btn-sm" onclick="sendComment($(this));">
+                <button type="button" class="btn btn-default btn-sm" onclick="GM.View.Comments.SendComment($(this));">
                     <xsl:if test="$comments//current_user/@captcha">
                         <xsl:attribute name="data-captcha">1</xsl:attribute>
                     </xsl:if>
@@ -153,7 +153,7 @@
                 <xsl:with-param name="cut-height" select="$cut-height" />
             </xsl:apply-templates>
             <xsl:if test="$comments//total &gt; $comments//per_page">
-                <a class="more" href="#" onclick="glasmedia.getListComments($(this),'{$comments//obj_id}','{$comments//per_page}');return false;"><span>Показать еще</span><img class="preloader hide" src="/templates/iview/images/preloader.gif" /></a>
+                <a class="more" href="#" onclick="GM.View.Comments.GetListComments($(this),'{$comments//obj_id}','{$comments//per_page}');return false;"><span>Показать еще</span><img class="preloader hide" src="/templates/iview/images/preloader.gif" /></a>
             </xsl:if>
         </div>
     </xsl:template>
@@ -244,7 +244,7 @@
                 </xsl:if>
             </div>
             <xsl:if test="$comments//current_user/@id = '2'">
-                <img class="comment_remove" src="/images/cms/admin/mac/tree/ico_del.png" onclick="comment_remove({@id});" />
+                <img class="comment_remove" src="/images/cms/admin/mac/tree/ico_del.png" onclick="GM.Events.Comments.CommentRemove({@id});" />
             </xsl:if>
         </div>
     </xsl:template>
@@ -256,7 +256,7 @@
             <xsl:with-param name="comments" select="." />
         </xsl:apply-templates>
         <xsl:if test=".//total &gt; .//per_page">
-            <a class="more" href="#" onclick="getListComments($(this),'{.//obj_id}','{.//per_page}');return false;"><span>Показать еще</span><img class="preloader hide" src="/templates/iview/images/preloader.gif" /></a>
+            <a class="more" href="#" onclick="GM.View.Comments.GetListComments($(this),'{.//obj_id}','{.//per_page}');return false;"><span>Показать еще</span><img class="preloader hide" src="/templates/iview/images/preloader.gif" /></a>
         </xsl:if>
     </xsl:template>
 
@@ -267,7 +267,7 @@
             <xsl:with-param name="comments" select="." />
         </xsl:apply-templates>
         <xsl:if test=".//total &gt; .//per_page">
-            <a class="more" href="#" onclick="getListComments($(this),'{.//obj_id}','{.//per_page}');return false;"><span>Показать еще</span><img class="preloader hide" src="/templates/iview/images/preloader.gif" /></a>
+            <a class="more" href="#" onclick="GM.View.Comments.GetListComments($(this),'{.//obj_id}','{.//per_page}');return false;"><span>Показать еще</span><img class="preloader hide" src="/templates/iview/images/preloader.gif" /></a>
         </xsl:if>
     </xsl:template>
 

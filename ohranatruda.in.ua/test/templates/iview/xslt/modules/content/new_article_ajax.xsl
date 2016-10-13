@@ -313,7 +313,7 @@
                                 <input type="hidden" name="data[{$name}]" value="{$fields[@name = $name]/value}" reload_form="1" />
                             </xsl:when>
                             <xsl:otherwise>
-                                <a href="#" class="thumbnail empty" data-fragment="" data-url="/content/upload_image_article/" data-parameters="field_name={$name}" onclick="UploadImage('upload_image_article', $(this));">+</a>
+                                <a href="#" class="thumbnail empty" data-fragment="" data-url="/content/upload_image_article/" data-parameters="field_name={$name}" onclick="GM.View.Images.UploadImage('upload_image_article', $(this));">+</a>
                             </xsl:otherwise>
                         </xsl:choose>
                     </div>

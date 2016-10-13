@@ -149,7 +149,7 @@
                         </xsl:apply-templates>
 
                         <xsl:if test="$enable_edit = 'true'">
-                            <div class="feed_img_cover_ch" data-fragment="3" data-url="/vote/upload_photo_cover_feed/" data-parameters="id={$id}" onclick="UploadImage('upload_image_feed', $(this));">
+                            <div class="feed_img_cover_ch" data-fragment="3" data-url="/vote/upload_photo_cover_feed/" data-parameters="id={$id}" onclick="GM.View.Images.UploadImage('upload_image_feed', $(this));">
                                 <span class="glyphicon glyphicon-camera"></span>
                                 <xsl:choose>
                                     <xsl:when test="$feed//photo_cover != ''">
@@ -176,14 +176,14 @@
                                         <div class="edit">
                                             <span></span>
                                             <div>
-                                                <a href="#" data-fragment="1" data-url="/vote/upload_photo_profile_feed/" data-parameters="id={$id}" onclick="UploadImage('upload_image_feed', $(this));">Изменить фото профиля</a>
+                                                <a href="#" data-fragment="1" data-url="/vote/upload_photo_profile_feed/" data-parameters="id={$id}" onclick="GM.View.Images.UploadImage('upload_image_feed', $(this));">Изменить фото профиля</a>
                                                 <a href="/vote/remove_photo_profile_feed/{$id}/">Удалить фото профиля</a>
                                             </div>
                                         </div>
                                     </xsl:if>
                                 </xsl:when>
                                 <xsl:otherwise>
-                                    <div data-fragment="1" data-url="/vote/upload_photo_profile_feed/" data-parameters="id={$id}" onclick="UploadImage('upload_image_feed', $(this));">
+                                    <div data-fragment="1" data-url="/vote/upload_photo_profile_feed/" data-parameters="id={$id}" onclick="GM.View.Images.UploadImage('upload_image_feed', $(this));">
                                         <span class="glyphicon glyphicon-camera"></span>
                                         <div>Добавить фото профиля</div>
                                     </div>
